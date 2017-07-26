@@ -1,16 +1,18 @@
 <html>
-<head>
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-<div class="container">
-<h2>{{item.name}}</h2>
 
-<div>
-<h3>Description:</h3>
-<p>{{item.description}}</p>
-</div>
-</div>
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <h2>{{item.name}}</h2>
+
+        <div>
+            <h3>Description:</h3>
+            <p>{{item.description}}</p>
+        </div>
+    </div>
 </body>
 
 </html>

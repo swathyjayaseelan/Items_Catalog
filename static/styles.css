@@ -1,26 +1,25 @@
 body {
- font-family: "Times New Roman", Georgia, Serif; 
+    font-family: "Times New Roman", Georgia, Serif;
 }
-.container{
- background-color: lightgray;
- width: 500px; 
- margin: 0px auto 0px auto;
- border: 2px solid black; 
- padding: 5px;
+.container {
+    background-color: lightgray;
+    width: 500px;
+    margin: 0px auto 0px auto;
+    border: 2px solid black;
+    padding: 5px;
 }
-.header{
- background-color: lightyellow;
- margin-top: -25px;
- margin-left: -5px;
- margin-right: -5px;
+.header {
+    background-color: lightyellow;
+    margin-top: -25px;
+    margin-left: -5px;
+    margin-right: -5px;
 }
-h1{
- text-align: center;
+h1 {
+    text-align: center;
 }
-#signInButton{
- float: right;
-
+#signInButton {
+    float: right;
 }
-.logout{
- float: right;
+.logout {
+    float: right;
 }

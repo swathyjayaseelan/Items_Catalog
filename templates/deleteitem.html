@@ -1,17 +1,21 @@
 <html>
-<head>
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-<div class="container">
-<form action= "{{url_for('deleteitem', category_name=category_name, categoryitems_name= item.name, categoryitems_id = item.id)}}" method = 'POST'>
 
-<div>
-<h2>Are you sure you want to delete {{item.name}} ?</h2>
-</div>
-<input type='submit' value='Yes'>
-<button><a href="{{url_for('catalogItems')}}">No</a></button>
-</form>
-</div>
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <form action="{{url_for('deleteitem', category_name=category_name, categoryitems_name= item.name, categoryitems_id = item.id)}}" method='POST'>
+
+            <div>
+                <h2>Are you sure you want to delete {{item.name}} ?</h2>
+            </div>
+            <input type='submit' value='Yes'>
+            <button><a href="{{url_for('catalogItems')}}">No</a>
+            </button>
+        </form>
+    </div>
 </body>
+
 </html>

@@ -1,19 +1,23 @@
 <html>
+
 <head>
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles.css') }}">
 </head>
+
 <body>
-<div class="container">
-<form action= "{{url_for('edititem', category_name=category_name, categoryitems_name = item.name, categoryitems_id = item.id)}}" method = 'POST'>
-<h2>Edit Item</h2>
-<h3>Name:</h3>
-<input type = 'text' size='30' name = 'name' placeholder = '{{item.name}}'>
-<h3>Description:</h3>
-<input type="text" size='60' name = 'desc'><br>
-<br>
-<input type='submit' value='Edit'>
-<a href="{{url_for('catalogItems')}}">Cancel</a>
-</form>
-</div>
+    <div class="container">
+        <form action="{{url_for('edititem', category_name=category_name, categoryitems_name = item.name, categoryitems_id = item.id)}}" method='POST'>
+            <h2>Edit Item</h2>
+            <h3>Name:</h3>
+            <input type='text' size='30' name='name' placeholder='{{item.name}}'>
+            <h3>Description:</h3>
+            <input type="text" size='60' name='desc'>
+            <br>
+            <br>
+            <input type='submit' value='Edit'>
+            <a href="{{url_for('catalogItems')}}">Cancel</a>
+        </form>
+    </div>
 </body>
+
 </html>
